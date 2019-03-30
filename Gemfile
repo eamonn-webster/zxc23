@@ -1,3 +1,12 @@
+#
+# File: Gemfile
+# Author: eamonn.webster@gmail.com
+# Copyright eweb, 2017-2019
+# Contents:
+#
+# Date:          Author:  Comments:
+# 30th Mar 2019  eweb     #0013 Google auth
+#
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -32,6 +41,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'google_sign_in'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
