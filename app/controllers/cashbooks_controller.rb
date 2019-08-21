@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class CashbooksController < ApplicationController
-  before_action :set_cashbook, only: [:show, :update, :destroy]
+  before_action :set_cashbook, only: %i[show update destroy]
 
   # GET /cashbooks
   def index

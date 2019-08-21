@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -42,7 +44,6 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
-
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 
@@ -52,6 +53,6 @@ Rails.application.configure do
 
   config.action_dispatch.default_headers = {
     'Access-Control-Allow-Origin' => 'http://localhost:3000',
-    'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+    'Access-Control-Request-Method' => %w[GET POST OPTIONS].join(',')
   }
 end
