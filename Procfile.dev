@@ -1,0 +1,2 @@
+web: sh -c 'cd client && PORT=4000 npm start'
+api: env PORT=4001 bundle exec rails s
