@@ -1,4 +1,4 @@
-class CreateCashbooks < ActiveRecord::Migration[6.0]
+class CreateCashbooks < ActiveRecord::Migration[5.2]
   def change
     create_table :cashbooks do |t|
       t.string :title

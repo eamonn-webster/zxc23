@@ -1,4 +1,4 @@
-class CreateTransactions < ActiveRecord::Migration[6.0]
+class CreateTransactions < ActiveRecord::Migration[5.2]
   def change
     create_table :transactions do |t|
       t.string :part
