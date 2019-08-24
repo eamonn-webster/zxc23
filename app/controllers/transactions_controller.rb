@@ -20,7 +20,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
 
     if @transaction.save
-      render json: @transaction, status: :created, location: @transaction
+      render json: @transaction, status: :created
     else
       render json: @transaction.errors, status: :unprocessable_entity
     end
@@ -37,7 +37,11 @@ class TransactionsController < ApplicationController
 
   # DELETE /transactions/1
   def destroy
-    @transaction.destroy
+    if @transaction.destroy
+      head :no_content, status: :ok
+    else
+      render json: @transaction.errors, status: :unprocessable_entity
+    end
   end
 
   private

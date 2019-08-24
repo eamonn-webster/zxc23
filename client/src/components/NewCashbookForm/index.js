@@ -7,7 +7,7 @@ const NewCashbookForm = ({onNewCashbook}) => {
     onNewCashbook(title.value, opening_value.value);
     title.value = '';
     opening_value.value = '';
-    title.focus()
+    title.focus();
   };
 
   return (

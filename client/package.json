@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --coverageDirectory=output/coverage/jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -29,5 +29,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.17.0",
+    "enzyme-adapter-react-16": "^1.14.0"
   }
 }
