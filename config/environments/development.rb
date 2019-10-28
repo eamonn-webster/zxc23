@@ -55,4 +55,7 @@ Rails.application.configure do
     'Access-Control-Allow-Origin' => 'http://localhost:3000',
     'Access-Control-Request-Method' => %w[GET POST OPTIONS].join(',')
   }
+
+  # devise
+  config.action_mailer.default_url_options = {host: 'localhost', port: 4000}
 end

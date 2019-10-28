@@ -35,5 +35,18 @@ module Zxc23
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # from https://medium.com/@nandhae/2019-how-i-set-up-authentication-with-jwt-in-just-a-few-lines-of-code-with-rails-5-api-devise-9db7d3cee2c0
+    config.middleware.insert_before(0, Rack::Cors) do
+      allow do
+        origins '*'
+        resource(
+          '*',
+          headers: :any,
+          expose: ['Authorization'],
+          methods: %i[get patch put delete post options show]
+        )
+      end
+    end
   end
 end
