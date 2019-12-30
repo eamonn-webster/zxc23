@@ -1,5 +1,6 @@
 {
   "name": "zxc23",
+  "license": "UNLICENSED",
   "engines": {
     "node": "12.8.0"
   },
