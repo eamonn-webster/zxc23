@@ -5,9 +5,9 @@
     "node": "12.8.0"
   },
   "scripts": {
-    "build": "cd client && npm install && npm run build && cd ..",
+    "build": "cd client && yarn install && yarn run build && cd ..",
     "deploy": "cp -a client/build/. public/",
-    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+    "postinstall": "yarn run build && yarn run deploy && echo 'Client built!'"
   },
   "devDependencies": {
     "async-wait-until": "^1.2.4",
