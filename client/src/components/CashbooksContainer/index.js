@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import Cashbook from '../Cashbook';
 import NewCashbookForm from '../NewCashbookForm';
 import EditCashbookForm from '../EditCashbookForm';

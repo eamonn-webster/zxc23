@@ -1,5 +1,4 @@
 import http from '../../config/http';
-import axios from "axios";
 
 class CashbookService {
   static index() {

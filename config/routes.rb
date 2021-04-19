@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   root to: 'cashbook#index'
 
+  get 'users/check_for_user', to: 'users#check_for_user'
+
   # devise_for :users,
   #            path: '',
   #            path_names: {
