@@ -13,5 +13,8 @@
     "async-wait-until": "^1.2.4",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001211"
   }
 }
