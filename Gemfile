@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.6'
+ruby '3.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
@@ -28,7 +28,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rack-cors'
 
 gem 'devise'
-gem 'devise-jwt' #, '~> 0.5.8'
+gem 'devise-jwt', require: 'devise/jwt' #, '~> 0.5.8'
 
 gem 'dry-configurable', '~> 0.9.0'
 
