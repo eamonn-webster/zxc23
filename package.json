@@ -2,7 +2,7 @@
   "name": "zxc23",
   "license": "UNLICENSED",
   "engines": {
-    "node": "14.20.0"
+    "node": "23.10.0"
   },
   "scripts": {
     "build": "cd client && yarn install && yarn run build && cd ..",
